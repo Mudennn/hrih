@@ -1,0 +1,255 @@
+.main-content {
+  background-color: var(--bg-color);
+}
+
+.content-box {
+  display: grid;
+  align-items: start;
+  justify-content: start;
+  grid-template-columns: 1fr;
+}
+
+.user {
+  background-color: white;
+  display: flex;
+  align-items: center;
+  justify-content: end;
+  padding: 13px 32px 13.24px 0px;
+  gap: 8px;
+}
+.user img {
+  width: 40px;
+  height: 40px;
+}
+
+
+
+.content {
+  /* margin-top: 24px; */
+  display: grid;
+  grid-template-columns: 2fr 1fr;
+  padding: 16px 32px;
+}
+
+/* ANNOUNCEMENT CONTENT */
+.announcement-content {
+  border-right: solid 1px var(--border-color);
+  padding-right: 16px;
+}
+.announcement-content h3 {
+  margin-top: 24px;
+}
+.announcement-list {
+  margin-top: 16px;
+}
+
+.announcement-card {
+  position: relative;
+  border: solid 1px var(--main-color);
+  border-radius: 16px;
+  padding: 24px;
+  width: 100%;
+  background-color: white;
+  cursor: pointer;
+  transition: all 0.3s;
+}
+
+.announcement-card:hover {
+  box-shadow: 0px 10px 8px rgba(0, 0, 0, 0.1);
+}
+
+/* -- ANNOUNCEMENT CARD COMPONENT -- */
+.announcement-card h4 {
+  margin-bottom: 8px;
+  color: var(--main-color);
+  font-weight: 500;
+}
+
+.announcement-card p {
+  margin-bottom: 8px;
+  font-weight: 300;
+  color: var(--menu-text-color);
+}
+
+.announcement-card .date-time-container {
+  display: flex;
+  gap: 16px;
+}
+
+.announcement-card .date {
+  display: flex;
+  align-items: center;
+  justify-content: start;
+  gap: 4px;
+  color: var(--main-color);
+}
+
+.announcement-card .date .calender {
+  font-size: 18px;
+  color: var(--main-color);
+}
+
+.announcement-card .time {
+  display: flex;
+  align-items: center;
+  justify-content: start;
+  gap: 4px;
+  color: var(--main-color);
+}
+
+.announcement-card .time .clock {
+  font-size: 18px;
+  color: var(--main-color);
+}
+
+.announcement-card span.new-tab-arrow {
+  position: absolute;
+  right: 16;
+  bottom: 16;
+  font-size: 32px;
+  color: var(--main-color);
+  transition: all 0.3s;
+}
+
+.announcement-card:hover span.new-tab-arrow {
+  transform: rotateZ(45deg);
+}
+/* ----------------------------- */
+
+/* ACTIVITIES CONTENT */
+.activities-content {
+  margin-left: 16px;
+  background-color: white;
+  border: solid 1px var(--menu-bg-color);
+  border-radius: 16px;
+  padding: 32px;
+  width: 100%;
+  box-shadow: 0px 10px 8px rgba(0, 0, 0, 0.1);
+
+}
+
+.activities-list {
+  display: grid;
+  /* display: flex;
+  flex-wrap: wrap;
+  align-items: start;
+  justify-content: start; */
+  gap: 8px;
+  margin-top: 16px;
+}
+
+/* -- ACTIVITIES CARD COMPONENT -- */
+.activity-card {
+  border: solid 1px var(--menu-bg-color);
+  border-radius: 16px;
+  padding: 24px;
+  width: 100%;
+  background-color: white;
+  transition: all 0.3s;
+}
+
+.activity-card:hover {
+  box-shadow: 0px 10px 8px rgba(0, 0, 0, 0.1);
+}
+
+.activity-card h4 {
+  margin-bottom: 8px;
+  color: var(--main-color);
+  font-weight: 500;
+}
+
+.activity-card p {
+  margin-bottom: 8px;
+  font-weight: 300;
+  color: var(--menu-text-color);
+}
+
+.activity-card .date-time-container {
+  display: flex;
+  gap: 16px;
+}
+
+.activity-card .date {
+  display: flex;
+  align-items: center;
+  justify-content: start;
+  gap: 4px;
+  color: var(--main-color);
+}
+
+.activity-card .date .calender {
+  font-size: 18px;
+  color: var(--main-color);
+}
+
+.activity-card .time {
+  display: flex;
+  align-items: center;
+  justify-content: start;
+  gap: 4px;
+  color: var(--main-color);
+}
+
+.activity-card .time .clock {
+  font-size: 18px;
+  color: var(--main-color);
+}
+/* ----------------------------- */
+
+/* PHONE MEDIA QUERY */
+@media only screen and (max-width: 767px) {
+
+
+  .announcement-content {
+    border-right: none;
+    padding-right: 0;
+  }
+
+  .announcement-content h3 {
+    margin-top: 16px;
+  }
+
+  .activities-content {
+    margin-left: 0;
+    margin-top: 24px;
+  }
+
+  .activity-card {
+    width: 100%;
+  }
+}
+
+/* TABLET AND IPAD QUERY */
+@media (min-width: 768px) and (max-width: 1024px) {
+   
+      .user {
+        justify-content: start;
+        padding-left: 16px;
+        padding-top: 16px;
+        padding-bottom: 16px;
+        gap: 8px;
+      }
+    
+      .content {
+        grid-template-columns: 1fr;
+        padding: 0 16px 32px 16px;
+      }
+    
+      .announcement-content {
+        border-right: none;
+        padding-right: 0;
+      }
+    
+      .announcement-content h3 {
+        margin-top: 16px;
+      }
+    
+      .activities-content {
+        margin-left: 0;
+        margin-top: 24px;
+      }
+    
+      .activity-card {
+        width: 100%;
+      }
+}

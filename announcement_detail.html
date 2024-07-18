@@ -1,0 +1,159 @@
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="styles/index.css" />
+    <link rel="stylesheet" href="styles/sidebar.css" />
+    <link rel="stylesheet" href="styles/announcement_detail.css" />
+    <link
+      href="https://fonts.googleapis.com/icon?family=Material+Symbols+Outlined"
+      rel="stylesheet"
+    />
+    <title>HR</title>
+  </head>
+  <body>
+    <div class="container">
+      <!-- SIEDEBAR START -->
+      <aside>
+        <div class="sidebar active">
+          <div class="menu-btn">
+            <span class="material-symbols-outlined"> chevron_left </span>
+          </div>
+          <div class="logo">
+            <div class="image">
+              <span class="material-symbols-outlined"> home </span>
+              <h6 class="text">HR</h6>
+            </div>
+            <div class="close" id="close-btn">
+              <span class="material-symbols-outlined"> close </span>
+            </div>
+          </div>
+
+          <div class="nav">
+            <div class="menu">
+              <ul>
+                <li>
+                  <a href="index.html"
+                    ><span class="material-symbols-outlined"> home </span
+                    ><span class="text">Home</span></a
+                  >
+                </li>
+                <li>
+                  <a href="category.html"
+                    ><span class="material-symbols-outlined"> category </span>
+
+                    <span class="text">Categories</span></a
+                  >
+                </li>
+                <li>
+                  <a href="feedback.html"
+                    ><span class="material-symbols-outlined"> feedback </span>
+
+                    <span class="text">Feedback</span></a
+                  >
+                </li>
+                <li>
+                  <a href="#"
+                    ><span class="material-symbols-outlined"> campaign </span
+                    ><span class="text">Announcement</span></a
+                  >
+                </li>
+                <li>
+                  <a href="#"
+                    ><span class="material-symbols-outlined"> person </span>
+                    <span class="text">Profile </span>
+                    <span class="material-symbols-outlined arrow">
+                      keyboard_arrow_down
+                    </span>
+                  </a>
+
+                  <ul class="sub-menu">
+                    <li>
+                      <a href="profile_detail.html"><span class="text">Profile Detail</span></a>
+                    </li>
+                    <li>
+                      <a href="change_password.html"><span class="text">Change Password</span></a>
+                    </li>
+                    <li>
+                      <a href="update_profile.html"><span class="text">Update Profile</span></a>
+                    </li>
+                  </ul>
+                </li>
+              </ul>
+            </div>
+          </div>
+
+          <div class="logout">
+            <ul>
+              <li>
+                <a href="#"
+                  ><span class="material-symbols-outlined"> logout </span
+                  ><span class="text">Logout</span></a
+                >
+              </li>
+            </ul>
+          </div>
+        </div>
+      </aside>
+
+      <!-- SIDEBAR END -->
+
+      <!-- CONTENT START -->
+      <div class="main-content">
+        <div class="navbar">
+          <div><h1>HR</h1></div>
+          <div>
+            <button id="menu-btn">
+              <span class="material-symbols-outlined"> menu </span>
+            </button>
+          </div>
+        </div>
+
+        <div class="content-box">
+          <div class="user">
+            <img src="/images/profile.png" alt="" />
+            <div class="user-details">
+              <p>Hello, Teck Guan! &#128075;</p>
+              <p id="current-date"></p>
+            </div>
+          </div>
+          <hr />
+          <div class="content">
+            <h1>Announcement Details</h1>
+            <div class="annoucement-card">
+                <h1>Welcome to the HR Dashboard!</h1>
+                <p>Welcome, team, to our new HR Dashboard! This dashboard is designed to provide you with a comprehensive overview of our human resources metrics and insights. Here's what you can expect:</p>
+                
+                <img src="/images/image_2.jpg" alt="">
+                
+                <h2>Key Features:</h2>
+                <ul>
+                    <li><strong>Employee Demographics</strong>: Visualizations and breakdowns of employee age, gender, department, and tenure.</li>
+                    <li><strong>Recruitment Insights</strong>: Track recruitment metrics such as time-to-hire, source of hire, and open positions.</li>
+                    <li><strong>Performance Metrics</strong>: Overview of performance reviews, employee ratings, and goal achievements.</li>
+                    <li><strong>Attendance and Leave</strong>: Monitor attendance trends, leave balances, and absenteeism rates.</li>
+                    <li><strong>Employee Satisfaction</strong>: Feedback from employee surveys and engagement scores.</li>
+                </ul>
+                
+                <h2>Getting Started:</h2>
+                <ul>
+                    <li><strong>Explore the Dashboard</strong>: Navigate through different sections to get a feel of the available data.</li>
+                    <li><strong>Interactive Filters</strong>: Use the filters to drill down into specific departments, locations, or time periods.</li>
+                    <li><strong>Regular Updates</strong>: The data will be updated regularly to ensure you have the latest information.</li>
+                </ul>
+                
+                <h2>Purpose of This Dashboard:</h2>
+                <p>This dashboard aims to enhance our understanding of the workforce and support data-driven decisions. Whether you're in HR, management, or any other department, you'll find valuable insights to help improve our work environment and operational efficiency.</p>
+                <br>
+                <p>Feel free to reach out with any questions or feedback. Happy exploring!</p>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- CONTENT END -->
+    </div>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="/scripts/sidebar.js"></script>
+    <script src="/scripts/date.js"></script>
+  </body>
+</html>

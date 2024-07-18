@@ -1,0 +1,95 @@
+/* TAK PERLU COPY BALIK NANTI */
+
+  .content-box {
+    display: grid;
+    align-items: start;
+    justify-content: start;
+    grid-template-columns: 1fr;
+  }
+  
+
+/* -------------------------------------- */
+.content {
+    display: grid;
+    grid-template-columns: 1fr;
+    padding: 16px 32px;
+  }
+
+.category-list{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 8px;
+    margin-top: 16px;
+    width: 100%;
+}
+
+.category-card{
+    width: 24%;
+    height: 150px;
+    border: 1px solid var(--main-color);
+    border-radius: 16px;
+    position: relative;
+    cursor: pointer;
+    display:inline-block; 
+    transition: all 0.3s;
+}
+
+.category-card:hover{
+    box-shadow: 0px 10px 8px rgba(0, 0, 0, 0.1);
+
+}
+
+.category-card .gradient {
+    height: 100%;
+    width: 100%;
+    background-image: linear-gradient(to top, rgb(253, 253, 253), rgba(255, 255, 255, 0.579));
+    opacity: 0.9;
+    position: absolute;
+    z-index: 1;
+    border-radius: 16px;
+}
+.category-card img{
+    object-fit: cover;
+    object-position: bottom;
+    position:relative;
+    width: 100%;
+    height: 100%;
+    border-radius: 16px;
+    display: block;
+}
+
+.category-card .category-details {
+    position: absolute;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    right: 16;
+    bottom: 16;
+    left: 16;
+    z-index: 2;
+}
+.category-card span.new-tab-arrow{
+    transition: all 0.3s;
+}
+
+.category-card:hover span.new-tab-arrow {
+    transform: rotateZ(45deg);
+  }
+
+
+  /* PHONE MEDIA QUERY */
+@media only screen and (max-width: 767px) {
+   
+    .category-card{
+        width: 100%;
+    }
+    
+  }
+  
+  /* TABLET AND IPAD QUERY */
+  @media (min-width: 768px) and (max-width: 1024px) {
+    .category-card{
+        width: 32%;
+    }
+    
+  }

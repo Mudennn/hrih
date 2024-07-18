@@ -1,0 +1,193 @@
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="styles/index.css" />
+    <link rel="stylesheet" href="styles/sidebar.css" />
+    <link rel="stylesheet" href="styles/profile_detail.css" />
+    <link
+      href="https://fonts.googleapis.com/icon?family=Material+Symbols+Outlined"
+      rel="stylesheet"
+    />
+    <title>HR</title>
+  </head>
+  <body>
+    <div class="container">
+      <!-- SIEDEBAR START -->
+      <aside>
+        <div class="sidebar active">
+          <div class="menu-btn">
+            <span class="material-symbols-outlined"> chevron_left </span>
+          </div>
+          <div class="logo">
+            <div class="image">
+              <span class="material-symbols-outlined"> home </span>
+              <h6 class="text">HR</h6>
+            </div>
+            <div class="close" id="close-btn">
+              <span class="material-symbols-outlined"> close </span>
+            </div>
+          </div>
+
+          <div class="nav">
+            <div class="menu">
+              <ul>
+                <li>
+                  <a href="index.html"
+                    ><span class="material-symbols-outlined"> home </span
+                    ><span class="text">Home</span></a
+                  >
+                </li>
+                <li>
+                  <a href="category.html"
+                    ><span class="material-symbols-outlined"> category </span>
+
+                    <span class="text">Categories</span></a
+                  >
+                </li>
+                <li>
+                  <a href="feedback.html"
+                    ><span class="material-symbols-outlined"> feedback </span>
+
+                    <span class="text">Feedback</span></a
+                  >
+                </li>
+                <li>
+                  <a href="#"
+                    ><span class="material-symbols-outlined"> campaign </span
+                    ><span class="text">Announcement</span></a
+                  >
+                </li>
+                <li>
+                  <a href="#"
+                    ><span class="material-symbols-outlined"> person </span>
+                    <span class="text">Profile </span>
+                    <span class="material-symbols-outlined arrow">
+                      keyboard_arrow_down
+                    </span>
+                  </a>
+
+                  <ul class="sub-menu">
+                    <li class="active">
+                      <a href="profile_detail.html"><span class="text">Profile Detail</span></a>
+                    </li>
+                    <li>
+                      <a href="change_password.html"><span class="text">Change Password</span></a>
+                    </li>
+                    <li>
+                      <a href="update_profile.html"><span class="text">Update Profile</span></a>
+                    </li>
+                  </ul>
+                </li>
+              </ul>
+            </div>
+          </div>
+
+          <div class="logout">
+            <ul>
+              <li>
+                <a href="#"
+                  ><span class="material-symbols-outlined"> logout </span
+                  ><span class="text">Logout</span></a
+                >
+              </li>
+            </ul>
+          </div>
+        </div>
+      </aside>
+
+      <!-- SIDEBAR END -->
+
+      <!-- CONTENT START -->
+      <div class="main-content">
+        <div class="navbar">
+          <div><h1>HR</h1></div>
+          <div>
+            <button id="menu-btn">
+              <span class="material-symbols-outlined"> menu </span>
+            </button>
+          </div>
+        </div>
+
+        <div class="content-box">
+          <div class="user">
+            <img src="/images/profile.png" alt="" />
+            <div class="user-details">
+              <p>Hello, Teck Guan! &#128075;</p>
+              <p id="current-date"></p>
+            </div>
+          </div>
+          <hr />
+          <div class="content">
+            <h1>My Profile</h1>
+            <div class="profile-detail-content">
+                <div class="name-box">
+                    <img src="/images/profile.png" alt="">
+                    <div class="id">
+                        <h3>Teo Teck Guan</h3>
+                        <p>12345678</p>
+                    </div>
+                </div>
+                <div class="personal-information">
+                    <h3>Personal Information</h3>
+                    <div class="personal-information-details">
+                      <div class="email-phone-container">
+                        <div class="email-detail">
+                            <h5>Email</h5>
+                            <p>teckguan87@gmail.com</p>
+                        </div>
+                        
+                        <div class="phone-detail">
+                            <h5>Phone</h5>
+                            <p>0123456789</p>
+                        </div> 
+                        
+                      </div>
+                        <div class="start-date">
+                            <h5>Start Date</h5>
+                            <p>2024-01-01</p>
+                        </div>
+                    </div>
+
+                </div>
+                <div class="address-information">
+                    <h3>Address Information</h3>
+                    <div class="address-information-details">
+                      <div class="address-postcode-container">
+
+                        <div class="address-detail">
+                            <h5>Address</h5>
+                            <p>No 123, Jalan 1, Presint 1 </p>
+                        </div>
+
+                        <div class="postcode-detail">
+                            <h5>Postocede</h5>
+                            <p>12345</p>
+                        </div> 
+                      </div>
+                        
+                      <div class="city-state-container">
+
+                        <div class="city-detail">
+                            <h5>City</h5>
+                            <p>Kepong</p>
+                        </div>
+                        <div class="state-detail">
+                            <h5>State</h5>
+                            <p>WP Putrajaya</p>
+                        </div>
+                      </div>
+                    </div>
+
+                </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- CONTENT END -->
+    </div>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="/scripts/sidebar.js"></script>
+    <script src="/scripts/date.js"></script>
+  </body>
+</html>
