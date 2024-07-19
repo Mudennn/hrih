@@ -21,8 +21,8 @@
           </div>
           <div class="logo">
             <div class="image">
-                <img src="/images/logo.jpeg" alt="" />
-              </div>
+              <img src="/images/logo.jpeg" alt="" />
+            </div>
             <div class="close" id="close-btn">
               <span class="material-symbols-outlined"> close </span>
             </div>
@@ -68,13 +68,19 @@
 
                   <ul class="sub-menu">
                     <li>
-                      <a href="profile_detail.html"><span class="text">Profile Detail</span></a>
+                      <a href="profile_detail.html"
+                        ><span class="text">Profile Detail</span></a
+                      >
                     </li>
                     <li>
-                      <a href="change_password.html"><span class="text">Change Password</span></a>
+                      <a href="change_password.html"
+                        ><span class="text">Change Password</span></a
+                      >
                     </li>
                     <li>
-                      <a href="update_profile.html"><span class="text">Update Profile</span></a>
+                      <a href="update_profile.html"
+                        ><span class="text">Update Profile</span></a
+                      >
                     </li>
                   </ul>
                 </li>
@@ -100,9 +106,9 @@
       <!-- CONTENT START -->
       <div class="main-content">
         <div class="navbar">
-            <div class="image">
-                <img src="/images/logo.jpeg" alt="" />
-              </div>
+          <div class="image">
+            <img src="/images/logo.jpeg" alt="" />
+          </div>
           <div>
             <button id="menu-btn">
               <span class="material-symbols-outlined"> menu </span>
@@ -121,38 +127,178 @@
           <hr />
           <div class="content">
             <div class="title">
-                <div>
-                    <h1>Probation</h1>
-                    <p>What is probation?</p>
-                </div>
-               
-                    <button class="back-button" onclick="goBack()"><span class="material-symbols-outlined">
-                        arrow_left_alt
-                        </span> Back</button>
-               
+              <div>
+                <h1>Probation</h1>
+                <p>What is probation?</p>
+              </div>
+
+              <button class="back-button" onclick="goBack()">
+                <span class="material-symbols-outlined"> arrow_left_alt </span>
+                Back
+              </button>
             </div>
             <div class="question-answer-container">
-                <div class="questions-container">
-                    <h3>Question</h3>
-                    <p class="question" onclick="showAnswer('answer1')">What is HTML?</p>
-                    <p class="question" onclick="showAnswer('answer2')">What is CSS?</p>
-                    <p class="question" onclick="showAnswer('answer3')">What is JavaScript?</p>
+              <div class="questions-container">
+                <h3>Question</h3>
+                <p class="question" onclick="showAnswer('answer1')">
+                  1. What is Probation?
+                </p>
+                <p class="question" onclick="showAnswer('answer2')">
+                  2. Is probation or probationary period is mandatory?
+                </p>
+                <p class="question" onclick="showAnswer('answer3')">
+                  3. What is the legal “minimum” or “maximum” probationary
+                  period?
+                </p>
+                <p class="question" onclick="showAnswer('answer4')">
+                  4. What should be a reasonable probation period?
+                </p>
+                <p class="question" onclick="showAnswer('answer5')">
+                  5. Can an employer choose to confirm an employee at an earlier
+                  stage?
+                </p>
+                <p class="question" onclick="showAnswer('answer6')">
+                  6. If the employer does not confirm the employee after the
+                  stipulated period of probation has passed, what is the status
+                  of the employee? Is there automatic confirmation?
+                </p>
+                <p class="question" onclick="showAnswer('answer7')">
+                  7. Can an employer use the probation clause to justify
+                  non-confirmation?
+                </p>
+                <p class="question" onclick="showAnswer('answer8')">
+                  8. Can a probationer be terminated during probation period?
+                </p>
+                <p class="question" onclick="showAnswer('answer9')">
+                  9. Is Performance Improvement Plan (PIP) required for
+                  employees on probation?
+                </p>
+              </div>
+              <div class="answers-container">
+                <h3>Answer</h3>
+                <p id="initialMessage" class="initial-message">
+                  Select any question to see the answer.
+                </p>
+                <div id="answer1" class="answer">
+                    <h4>What is Probation?</h4>
+                    <p>An employee is put on trial to prove his/her fitness for the job position for which he/she is employed in terms of his/her performance, conduct, and character.</p>
+                    <h4>Explanation</h4>
+                    <ul>
+                        <li>There is no statutory definition of what a “probation” is.</li>
+                        <li>However, case law does distinguish between a confirmed employee and a probationer.</li>
+                    </ul>
+                    <h4>Related Video</h4>
+                    <a href="https://www.youtube.com/watch?v=BLFetpRaQTY">Probation Management  <span class="material-symbols-outlined">
+                        north_east
+                        </span></a>
                 </div>
-                <div class="answers-container">
-                    <h3>Answer</h3>
-                    <p id="initialMessage" class="initial-message">
-                        Select any question to see the answer.
-                    </p>
-                    <p id="answer1" class="answer" style="display: none;">
-                        HTML (HyperText Markup Language) is the standard markup language for creating web pages and web applications.
-                    </p>
-                    <p id="answer2" class="answer" style="display: none;">
-                        CSS (Cascading Style Sheets) is a style sheet language used for describing the presentation of a document written in a markup language like HTML.
-                    </p>
-                    <p id="answer3" class="answer" style="display: none;">
-                        JavaScript is a programming language that conforms to the ECMAScript specification. It is high-level, often just-in-time compiled, and multi-paradigm.
-                    </p>
+                <div id="answer2" class="answer">
+                    <h4>Is probation or probationary period is mandatory?</h4>
+                    <ul>
+                        <li>There is no any Legal definition of a ‘Probationer’ or ‘Probationary Period’.</li>
+                        <li>The law does not mandate a probation.</li>
+                    </ul>
+                    <h4>Explanation</h4>
+                    <ul>
+                        <li>There is no any clause in the Employment Act 1955 does it say anything about probation.</li>
+                        <li>Probation isn’t even a legal requirement.</li>
+                        <li>Employer can ‘confirm’ an employee straight away.</li>
+                    </ul>
                 </div>
+                <div id="answer3" class="answer">
+                    <h4>What is the legal “minimum” or “maximum” probationary period?</h4>
+                    <p>There is also no legal “minimum” or “maximum” probationary period that needs to be imposed.</p>
+                    <h4>Explanation</h4>
+                    <ul>
+                        <li>Probationary period as stated in the employment contract shall be regarded as a contract of an agreed period or duration of trial of a term certain.</li>
+                    </ul>
+                </div>
+                <div id="answer4" class="answer">
+                    <h4>What should be a reasonable probation period?</h4>
+                    <ul>
+                        <li>There is no law governing the length of the probationary period although a probationary period in the range of 3 – 6 months is common.</li>
+                    </ul>
+                    <h4>Explanation</h4>
+                    <ul>
+                        <li>Probationary periods cannot be unreasonable in length.</li>
+                    </ul>
+                </div>
+                <div id="answer5" class="answer">
+                    <h4>Can an employer choose to confirm an employee at an earlier stage?</h4>
+                    <ul>
+                        <li>Yes</li>
+                    </ul>
+                    <h4>Explanation</h4>
+                    <p>It would depend on how the clause in the employment contract is worded and exceptional performance by the probationer.</p>
+                    <h4>Sample Document</h4>
+                    <a href="https://docs.google.com/document/d/1DDuW2Jnl-OahlFfdwLKdIu5qm9SP9LHM/edit?pli=1">Sample Letter - Staff Confirmation.doc  <span class="material-symbols-outlined">
+                        north_east
+                        </span></a>
+                </div>
+                <div id="answer6" class="answer">
+                    <h4>If the employer does not confirm the employee after the stipulated period of probation has passed, what is the status of the employee? Is there automatic confirmation?</h4>
+                    <p>There is no “automatic” confirmation upon the expiry of a set probation period.</p>
+                    <h4>Explanation</h4>
+                    <ul>
+                        <li>The status of the employee is that he is neither confirmed nor discharged from his/her employment as a probationer and is allowed to remain as a probationer.</li>
+                        <li>Technically, probationers will still remain under probation until confirmed or terminated even after their contractual probation period has ended.</li>
+                        <li>However, if the probation period has passed and the probationer continues to come into work, and by conduct of the employer that the probationer is treated as if they were a confirmed employee, the courts may recognize that the probationer was confirmed as an employee because of the employer’s conduct.</li>
+                    </ul>
+                    <h4>Explanation</h4>
+                    <ul>
+                        <li>In Paari a/l Perumal, the employee was employed as a clerk and in the contract of employment it was stated that his probation was for 3 months. The employer did not write an official letter of confirmation to the employee. In his contract of employment, it was stated that the employee would be entitled to annual leave if he was confirmed. Despite not being given an official confirmation letter, the employee was allowed to go on annual leave.</li>
+                        <li>The court held that due to the employer’s conduct in granting annual leave to the employee (which was only for confirmed employees), the employee was treated as if they were a confirmed employee.</li>
+                    </ul>
+                    <h4>Case Law/Reference</h4>
+                    <a href="https://drive.google.com/file/d/1a5Ip0ioury-m8dga5wkBy2RVWgR8qVgJ/view">Wong Choon Moey v Practimax Sdn Bhd, [2013] 2 ILJ 501.pdf  <span class="material-symbols-outlined">
+                        north_east
+                        </span></a>
+                    <a href="https://drive.google.com/file/d/1Vpdkz7e3Q_iaKSW8jMUNkhb1HC7Z02ov/view">KC_MATHEWS_v_KUMPULAN_GUTHRIE_SDN_BHD_-_[198.pdf  <span class="material-symbols-outlined">
+                        north_east
+                        </span></a>
+                </div>
+                <div id="answer7" class="answer">
+                    <h4>Can an employer use the probation clause to justify
+                        non-confirmation?</h4>
+                    <ul>
+                        <li>NO.</li>
+                        <li>Although there are very few cases in which probationers sue the employers for non-confirmation, employers retain the right to not confirm an employee.</li>
+                        <li>Typically, the reason for non-confirmation post-probation is due to performance.</li>
+                    </ul>
+                    <h4>Explanation</h4>
+                    <ul>
+                        <li>Section 20 of the Industrial Relations Act 1967 states that where a worker considers that he was dismissed without just cause or excuse, he may bring a legal action against his former employer to be reinstated in his former employment. This extends to probationers as well because it is recognised that probationers have the same rights as confirmed employees with respect to termination without just cause or excuse.</li>
+                        <li>The employer bears the burden of proving that performance was the reason for non-confirmation in the event the probationer files a claim before the Industrial Court.</li>
+                        <li>Therefore, if an employer does not wish to confirm an employee who is on probation, the employer must have just cause or excuse for doing so. If the employer wishes to solely rely on the probation clause, there is a very high probability that the court will rule dismissal to be without just cause or excuse. However, in an industrial court matter involving probationers, the back wages are limited to 12 months.</li>
+                    </ul>
+                </div>
+                <div id="answer8" class="answer">
+                    <h4>Can a probationer be terminated during probation period?</h4>
+                    <p>Employers cannot terminate an employee on probation without just cause.</p>
+                    <h4>Explanation</h4>
+                    <p>If the probationer exhibits poor performance, the employer will need to conduct a proper appraisal to inform the probationer about their performance. The appraisal needs to be in written form and signed by the probationer. There needs to be sufficient opportunity for the probationer to improve their performance, e.g. extension of their probation period.</p>
+                    <h4>Case Law/Reference</h4>
+                    <a href="https://drive.google.com/file/d/1ocyCi92ppKb1mg8BDtYE3Y-d_XTlsaZW/view">AWARD NO. 2091 OF 2022.pdf  <span class="material-symbols-outlined">
+                        north_east
+                        </span></a>
+                </div>
+                <div id="answer9" class="answer">
+                    <h4>Is Performance Improvement Plan (PIP) required for
+                        employees on probation?</h4>
+                    <p>PIP is not necessary and not relevant for probationers.</p>
+                    <ul>
+                        <li>PIP is for confirmed employees that need to improve their performance.</li>
+                    </ul>
+                    <h4>Explanation</h4>
+                    <ul>
+                        <li>Case law says a probationer has the same rights as a confirmed employee and a probationer remains a probationer until he is told otherwise.</li>
+                    </ul>
+                    <h4>Related Video</h4>
+                    <a href="https://www.facebook.com/MalaysiaHRForum/videos/1324459921640857">PIP Video <span class="material-symbols-outlined">
+                        north_east
+                        </span></a>
+                </div>
+              </div>
             </div>
           </div>
         </div>
@@ -162,18 +308,6 @@
     <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
     <script src="/scripts/sidebar.js"></script>
     <script src="/scripts/date.js"></script>
-    <script>
-        function showAnswer(answerId) {
-            document.getElementById('initialMessage').style.display = 'none';
-            var answers = document.getElementsByClassName('answer');
-            for (var i = 0; i < answers.length; i++) {
-                answers[i].style.display = 'none';
-            }
-            document.getElementById(answerId).style.display = 'block';
-        }
-        function goBack() {
-            window.history.back();
-        }
-    </script>
+    <script src="/scripts/question_and_awswer.js"></script>
   </body>
 </html>

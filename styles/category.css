@@ -68,6 +68,10 @@
     left: 16;
     z-index: 2;
 }
+
+.category-card .category-details h4{
+  color: var(--main-color);
+}
 .category-card span.new-tab-arrow{
     transition: all 0.3s;
 }

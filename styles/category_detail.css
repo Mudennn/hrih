@@ -15,7 +15,7 @@
     border: none;
     cursor: pointer;
     padding: 10px;
-    margin: 20px;
+    margin: 0 20px 0 0;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -39,12 +39,20 @@
     align-items: stretch;
   }
 
+  .question-answer-container .questions-container h3{
+    font-size: 24px;
+    font-weight: 500;
+    color: var(--main-color);
+
+  }
+
   .questions-container .question {
     background-color: white;
     padding: 16px;
-    margin: 8px 0 0 0;
+    margin: 16px 0 0 0;
     cursor: pointer;
     border-radius: 16px;
+    transition: color 0.3s, border-color 0.3s;
   }
 
   .questions-container .question:hover{
@@ -59,13 +67,59 @@
     border: 1px solid var(--main-color);
   }
 
+  .answers-container .initial-message{
+    margin-top: 16px;
+    font-size: 21px;
+  }
+
+  .answers-container h3{
+    font-weight: 500;
+    font-size: 24px;
+    color: var(--main-color);
+  }
   .answers-container .answer{
     margin-top: 8px;
   }
 
+  .answers-container .answer h4{
+    margin-top: 16px;
+    font-weight: 500;
+    color: var(--main-color);
+  }
+
+  .answers-container .answer ul{
+    list-style-type: decimal;
+    margin-left: 16px;
+    color: var(--text);
+    font-size: 14px;
+  }
+
+  .answers-container .answer a{
+    display: flex;
+    align-items: center;
+    justify-content: start;
+    gap: 8px;
+  }
+
+  .answers-container .answer a span {
+    font-size: 16px;
+  }
+
+  /* BORDER COLOR WHEN ACTIVE */
+  .active-question {
+    border-color: var(--main-color);
+    border-width: 1px;
+    border-style: solid;
+    color: var(--main-color);
+    transition: color 0.3s, border-color 0.3s;
+}
+
 
   /* PHONE MEDIA QUERY */
 @media only screen and (max-width: 767px) {
+  .title button{
+    margin: 0;
+  }
     .question-answer-container {
       
         grid-template-columns: 1fr ;
@@ -75,6 +129,15 @@
       .questions-container, .answers-container{
         padding: 24px;
        
+      }
+
+      .answers-container .answer h4{
+        font-size: 14px;
+      }
+    
+      .answers-container .answer ul{
+
+        font-size: 12px;
       }
     
   }
