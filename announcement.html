@@ -4,8 +4,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="styles/index.css" />
     <link rel="stylesheet" href="styles/sidebar.css" />
-    <!-- <link rel="stylesheet" href="styles/welcome.css"> -->
-    <link rel="stylesheet" href="styles/category.css" />
+    <link rel="stylesheet" href="styles/welcome.css" />
     <link
       href="https://fonts.googleapis.com/icon?family=Material+Symbols+Outlined"
       rel="stylesheet"
@@ -38,7 +37,7 @@
                     ><span class="text">Home</span></a
                   >
                 </li>
-                <li class="active">
+                <li>
                   <a href="category.html"
                     ><span class="material-symbols-outlined"> category </span>
 
@@ -52,7 +51,7 @@
                     <span class="text">Feedback</span></a
                   >
                 </li>
-                <li>
+                <li class="active">
                   <a href="announcement.html"
                     ><span class="material-symbols-outlined"> campaign </span
                     ><span class="text">Announcement</span></a
@@ -101,9 +100,9 @@
       <!-- CONTENT START -->
       <div class="main-content">
         <div class="navbar">
-          <div class="image">
-            <img src="/images/logo.jpeg" alt="" />
-          </div>
+            <div class="image">
+                <img src="/images/logo.jpeg" alt="" />
+              </div>
           <div>
             <button id="menu-btn">
               <span class="material-symbols-outlined"> menu </span>
@@ -120,27 +119,32 @@
             </div>
           </div>
           <hr />
-          <div class="content">
-            <div class="category-content">
-              <h1>Category</h1>
-              <div class="category-list">
-                <div class="category-card">
-                  <a href="category_detail.html">
-                  <div class="gradient"></div>
-                  <img src="/images/image_1.jpg" alt="" />
-                  <div class="category-details">
-                    <div>
-                      <h4>Probation</h4>
-                      <p>What is probation?</p>
-                    </div>
 
-                    <div>
-                      <span class="material-symbols-outlined new-tab-arrow">
-                        arrow_outward
-                      </span>
+          <div class="content">
+            <div class="announcement-content">
+              <h1>Welcome to HR Intellect Hub</h1>
+              <h3>Latest Announcement</h3>
+              <div class="announcement-list">
+                <div class="announcement-card">
+                  <a href="announcement_detail.html">
+                    <h4>People Management Skills</h4>
+                    <p>Description: Manage Various Personalities using DISC</p>
+                    <div class="date-time-container">
+                      <p class="date">
+                        <span class="material-symbols-outlined calender">
+                          calendar_today </span
+                        >2022-01-01
+                      </p>
+                      <p class="time">
+                        <span class="material-symbols-outlined clock">
+                          schedule </span
+                        >9am
+                      </p>
                     </div>
-                  </div>
-                </a>
+                    <span class="material-symbols-outlined new-tab-arrow">
+                      arrow_outward
+                    </span>
+                  </a>
                 </div>
               </div>
             </div>
