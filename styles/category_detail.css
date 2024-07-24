@@ -1,6 +1,7 @@
 .content {
     display: grid;
     padding: 16px 32px;
+    position: relative;
   }
 
   .title {
@@ -22,12 +23,32 @@
     gap: 8px;
   }
 
+
+  
   .question-answer-container {
     display: grid;
     grid-template-columns: 1fr 2fr;
     gap: 16px;
     margin-top: 16px;
   }
+  
+  /* -------------------------------- */
+
+  .search-container form {
+    display: flex;
+    gap: 8px;
+    align-items: center;
+    margin-top: 16px;
+}
+
+.form-control {
+    padding: 14px 8px;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    background-color: var(--bg-color);
+    width: 100%;
+    
+}
 
   .questions-container{
     padding: 32px;
@@ -60,11 +81,14 @@
 
   }
 
+  /* ----------------------------------- */
+
   .answers-container{
     background-color: white;
     padding: 32px;
     border-radius: 32px;
     border: 1px solid var(--main-color);
+    height: fit-content;
   }
 
   .answers-container .initial-message{
@@ -77,6 +101,7 @@
     font-size: 24px;
     color: var(--main-color);
   }
+
   .answers-container .answer{
     margin-top: 8px;
   }
@@ -85,6 +110,11 @@
     margin-top: 16px;
     font-weight: 500;
     color: var(--main-color);
+  }
+
+  .answers-container .answer h4::before{
+    content: "➤";
+    margin-right: 8px;
   }
 
   .answers-container .answer ul{
@@ -115,6 +145,214 @@
 }
 
 
+/* Popup styles */
+.answer-popup {
+  display: none;
+  position: fixed;
+  z-index: 1000;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  overflow: auto;
+  background-color: rgba(0, 0, 0, 0.4);
+  justify-content: center;
+  align-items: center;
+}
+
+.popup-content {
+  background-color: #fff;
+  margin: 50% auto;
+  padding: 8px 24px 24px 24px;
+  border: 1px solid #ddd;
+  width: 90%;
+  border-radius: 32px;
+  position: relative;
+  max-height: 50%; /* maximum height */
+  min-height: fit-content; /* minimum height */
+  overflow-y: auto; /* vertical scroll if content is too long */
+}
+
+.close-popup {
+  color: red;
+  font-size: 28px;
+  position: fixed; /* fixed position */
+  top: 150px;
+  right: 24px; /* position outside the popup content */
+  cursor: pointer;
+  z-index: 1001; /* higher than popup content */
+  width: 40px;
+  height: 40px;
+  background-color: white;
+  display: flex;
+  justify-content: center;
+  border-radius: 32px;
+}
+
+
+.close-popup:hover,
+.close-popup:focus {
+  color: #000;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+/* Styling the popup text */
+#popup-answer h4 {
+  font-size: 18px;
+  color: var(--main-color);
+ margin: 16px 0 0 0;
+  font-weight: 500;
+}
+
+#popup-answer p {
+  font-size: 14px;
+  margin-bottom: 16px;
+}
+
+#popup-answer a {
+  color: #007bff;
+  text-decoration: none;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  overflow: hidden;
+}
+
+#popup-answer ul{
+  list-style-type: decimal;
+  margin-left: 16px;
+  color: var(--text);
+  font-size: 14px;
+  /* margin-bottom: 16px; */
+}
+
+#popup-answer a span{
+  font-size: 16px;
+}
+
+/* --------------------------- */
+
+/* FEEDBACK FLOATING */
+/* Floating button */
+.floating-button {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  background-color: var(--main-color);
+  color: white;
+  border: none;
+  border-radius: 50%;
+  padding: 15px;
+  cursor: pointer;
+  z-index: 1000;
+  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
+  font-size: 18px;
+  transition: all 0.3s;
+}
+
+.floating-button:hover {
+  background-color: white;
+  color: var(--main-color);
+}
+
+/* Center the feedback popup */
+.feedback-popup {
+  display: none; /* Ensure it's hidden by default */
+  position: fixed;
+  z-index: 1000;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  overflow: auto;
+  background-color: rgba(0, 0, 0, 0.4);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.feedback-content {
+  background-color: #fff;
+  padding: 20px;
+  border: 1px solid #ddd;
+  width: 30%;
+  height: min-content;
+  border-radius: 10px;
+  position: relative;
+  overflow-y: auto;
+  border-radius: 32px;
+}
+
+.feedback-content .title-close-container{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 8px;
+}
+
+.title-close-container h4{
+  font-size: 21px;
+  font-weight: 500;
+  color: var(--main-color);
+}
+
+/* Style for the close button */
+.close-feedback {
+  color: red;
+  font-size: 28px;
+  cursor: pointer;
+  background-color: white;
+  transition: all 0.3s;
+}
+
+.close-feedback:hover,
+.close-feedback:focus {
+  color: #000;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+form {
+  width: 100%;
+}
+
+.input-form {
+  display: flex;
+  flex-direction: column;
+  margin: 16px 0;
+}
+
+.form-label {
+  margin-bottom: 4px;
+  font-weight: semi-bold;
+}
+
+.form-control {
+  padding: 16px 8px;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  background-color: var(--bg-color);
+}
+
+.form-control:focus {
+  border-color: var(--main-color); 
+  outline: none;
+}
+
+
+.input-form textarea{
+  height: 200px;
+}
+
+form .primary-button{
+  width: 100%;
+}
+
+
+
+
+
   /* PHONE MEDIA QUERY */
 @media only screen and (max-width: 767px) {
   .title button{
@@ -138,6 +376,14 @@
       .answers-container .answer ul{
 
         font-size: 12px;
+      }
+
+      .answers-container{
+        display: none;
+      }
+
+      .feedback-content{
+        width: 90%;
       }
     
   }

@@ -77,11 +77,11 @@
                         ><span class="text">Change Password</span></a
                       >
                     </li>
-                    <li>
+                    <!-- <li>
                       <a href="update_profile.html"
                         ><span class="text">Update Profile</span></a
                       >
-                    </li>
+                    </li> -->
                   </ul>
                 </li>
               </ul>
@@ -142,6 +142,12 @@
             <div class="question-answer-container">
               <div class="questions-container">
                 <h3>Question</h3>
+                <div class="search-container">
+                  <form action="">
+                    <input type="text" placeholder="Search Question" name="search" class="form-control">
+                    <button type="submit" class="primary-button">Search</button>
+                  </form>
+                </div>
                 <p class="question" onclick="showAnswer('answer1')">
                   1. What is Probation?
                 </p>
@@ -307,6 +313,61 @@
       </div>
       <!-- CONTENT END -->
     </div>
+
+       <!-- Popup for answers on mobile and iPad versions -->
+       <div id="answer-popup" class="answer-popup">
+        <div class="popup-content">
+          <span class="close-popup">&times;</span>
+          <div id="popup-answer"></div>
+        </div>
+      </div>
+
+      <!-- Floating button -->
+<div class="floating-button" onclick="openFeedbackForm()"><span class="material-symbols-outlined"> feedback </span></div>
+
+<!-- Feedback form popup -->
+<div id="feedback-popup" class="feedback-popup">
+  <div class="feedback-content">
+    <div class="title-close-container">
+      <h4>Feedback Form</h4>
+      <span class="close-feedback" onclick="closeFeedbackForm()">&times;</span>
+
+    </div>
+    <hr>
+    <form action="">
+      <div class="input-form">
+        <label for="date" class="form-label">Date:</label>
+        <input id="date" class="form-control" />
+      </div>
+
+      <div class="input-form">
+        <label for="category" class="form-label">Category:</label>
+        <select id="category" class="form-control">
+          <option value="probation">Probation</option>
+          <option value="test">Test</option>
+        </select>
+      </div>
+
+      <div class="input-form">
+        <label for="title" class="form-label">Title:</label>
+        <input id="title" class="form-control" />
+      </div>
+
+      <div class="input-form">
+        <label for="feedback" class="form-label">Leave Feedback:</label>
+        <textarea
+          id="feedback"
+          class="form-control"
+          rows="4"
+        ></textarea>
+      </div>
+
+      <button type="submit" class="primary-button">Submit</button>
+    </form>
+    </div>
+</div>
+
+
     <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
     <script src="/scripts/sidebar.js"></script>
     <script src="/scripts/date.js"></script>
