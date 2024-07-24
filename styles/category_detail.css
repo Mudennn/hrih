@@ -346,7 +346,9 @@ form .primary-button{
 }
 
 
-
+.no-scroll {
+  overflow: hidden;
+}
 
 
   /* PHONE MEDIA QUERY */
