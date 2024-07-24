@@ -174,20 +174,15 @@
   overflow-y: auto; /* vertical scroll if content is too long */
 }
 
+.popup-content .close-btn{
+  display: flex;
+  justify-content: end;
+}
+
 .close-popup {
   color: red;
   font-size: 28px;
-  position: fixed; /* fixed position */
-  top: 150px;
-  right: 24px; /* position outside the popup content */
   cursor: pointer;
-  z-index: 1001; /* higher than popup content */
-  width: 40px;
-  height: 40px;
-  background-color: white;
-  display: flex;
-  justify-content: center;
-  border-radius: 32px;
 }
 
 
@@ -202,7 +197,7 @@
 #popup-answer h4 {
   font-size: 18px;
   color: var(--main-color);
- margin: 16px 0 0 0;
+ /* margin: 16px 0 0 0; */
   font-weight: 500;
 }
 
@@ -225,7 +220,7 @@
   margin-left: 16px;
   color: var(--text);
   font-size: 14px;
-  /* margin-bottom: 16px; */
+  margin-bottom: 16px;
 }
 
 #popup-answer a span{
