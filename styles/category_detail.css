@@ -125,12 +125,14 @@
   }
 
   .answers-container .answer a{
+    color: #007bff;;
     display: flex;
     align-items: center;
     justify-content: start;
     gap: 8px;
   }
 
+  
   .answers-container .answer a span {
     font-size: 16px;
   }
@@ -208,12 +210,16 @@
 
 #popup-answer a {
   color: #007bff;
-  text-decoration: none;
-  display: flex;
-  align-items: center;
-  gap: 8px;
-  overflow: hidden;
+  display: inline-block; 
+width: 100%;
+white-space: normal;
+word-wrap: break-word;
+position: relative;
+text-decoration: none;
+overflow: hidden;
+text-overflow: ellipsis; 
 }
+
 
 #popup-answer ul{
   list-style-type: decimal;
@@ -225,6 +231,11 @@
 
 #popup-answer a span{
   font-size: 16px;
+}
+
+#popup-answer h4::before{
+  content: "➤";
+  margin-right: 8px;
 }
 
 /* --------------------------- */
